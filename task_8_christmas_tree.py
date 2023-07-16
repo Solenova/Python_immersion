@@ -9,13 +9,21 @@
 #  *******
 # *********
 
+#
+# rows = int(input('Введите количество рядов ёлки: '))
+# k = rows - 1  #  количество пробелов
+# for i in range(0, rows):
+#     for j in range(0, k):
+#         print(end=" ")
+#     k = k - 1   # уменьшение количества пробелов после каждой итерации
+#     for j in range(0, i + 1):
+#         print("* ", end="")
+#     print("")
 
-rows = int(input('Введите количество рядов ёлки: '))
-k = rows - 1  #  количество пробелов
-for i in range(0, rows):
-    for j in range(0, k):
-        print(end=" ")
-    k = k - 1   # уменьшение количества пробелов после каждой итерации
-    for j in range(0, i + 1):
-        print("* ", end="")
-    print("")
+# 2 variant
+one = 1
+two = 2
+rows = int(input("Сколько рядов у елки? "))
+
+for i in range(one, rows + one):
+    print(" "*(rows - i) + "*" * (two * i - one))
